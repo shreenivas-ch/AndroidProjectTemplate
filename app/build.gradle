@@ -48,8 +48,12 @@ android {
     android.applicationVariants.all { variant ->
 
         variant.outputs.all {
-            outputFileName = "OrdersManage${variant.versionName}-${variant.flavorName}.apk"
+            outputFileName = "AppName${variant.versionName}-${variant.flavorName}.apk"
         }
+    }
+
+    buildFeatures {
+        dataBinding = true
     }
 }
 
